@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0px;
+    margin:auto;
+    padding: 0px;
+    width: 85%;
+    background-color: #F0ECEC; /* couleur du fond de la page*/
+    min-height: 100%;
+
+}
+
+/**supprime cette section de code*****/
+.test{
+    min-height: 100vh;
+}
+/**jusqu'ici*****/
+
+.figures {
+    margin: 30px 0px;
+}
+
+.figures > h1 {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 41px;
+    font-weight: 500;
+}
+
+.separator {
+    margin: auto;
+    margin-top:20px;
+    position: relative;
+    height: 3px;
+    background-color: #BF0000; /* couleur de la ligne de separateur en dessous de Our figures*/
+    width: 40%;
+}
+
+.separator svg {
+    position: absolute;
+    fill: #87D251; /* couleur de l'icone sur le séparateur*/
+    transform: scale(1.4) translateY(-10px);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #F0ECEC /* couleur du fond de l'icone de papier (doit être la même que celle du fond de la page)*/;
+    padding: 0px 20px;
+}
+
+
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 18px;
+    margin:50px 0px;
+}
+
+
+.cardContainer .stat{
+    margin:auto;
+    text-align: center;
+    color:white;
+    background-color:#BF0000; /* couleur du fond des cartes contenant les nombres qui s'incrementent*/
+    border-radius: 20px;
+    box-shadow: 11px 7px 0px 0px rgba(0,0,0,.21);
+}
+
+.cardContainer .stat h1{
+    font-family: "Roboto";
+    font-size: 68px;
+    font-weight: bold;
+    padding: 20px;
+    margin:0px;
+}
+
+.cardContainer p {
+    margin-top:20px;
+    text-align:center;
+    font-weight: bold;
+}
+
+
+#plus::before{
+    content: "+";
+}
+
+/*****responsivité du contenu*****/
+
+
+
+@media screen and (max-width:768px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 18px;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 18px;
+    }
+
+}
+

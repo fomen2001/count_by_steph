@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <!--*********************** aos  **************************-->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+ <!--*********************** css  **************************-->
+    <link rel="stylesheet" href="main.css" />
+
+
+    <title>Document</title>
+  </head>
+  <body data-spy="scroll" data-offset="0">
+    <div class="test"></div>
+    <section class="figures">
+      <h1>Our figures</h1>
+      <div class="separator">
+        <svg
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      >
+        <path
+          d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"
+        />
+      </svg>
+      </div>
+      <div class ="cardContainer">
+             <div data-aos="zoom-in-up" data-aos-duration="500">
+                <div class="stat" >
+                    <h1 class="value" data-count="20">0</h1>
+                </div>
+                <p>YEARS OF EXPERIENCE</p>
+             </div>
+             <div data-aos="zoom-in-up" data-aos-duration="500">
+                <div class="stat" >
+                    <h1 class="value" data-count="60" id="plus">0</h1>
+                </div>
+                <p>COMPLETED PROJECTS</p>
+             </div>
+             <div data-aos="zoom-in-up" data-aos-duration="500">
+                <div class="stat" >
+                    <h1 class="value" data-count="100" id="plus">0</h1>
+                </div>
+                <p>COLLABORATORS ACROSS CAMEROON</p>
+             </div>
+             <div data-aos="zoom-in-up" data-aos-duration="500">
+                <div class="stat" >
+                    <h1 class="value" data-count="10">0</h1>
+                </div>
+                <p>REGIONS OF CAMEROON WHERE WE ARE PRESENT</p>
+             </div>     
+        </ul>
+      </div>
+    </section>
+
+
+<!--************************** aos *************************************-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({once:true});
+    </script>
+
+
+     <!--************************** index js *************************************-->
+     <script src="index.js"></script>
+  </body>
+</html>
